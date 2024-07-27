@@ -83,6 +83,9 @@
   main .section-2 .container .section-2-bottom .info-2 .info-img {
     width: 100%;
   }
+  main .section-3 .swiper-slide {
+    width: 100%;
+  }
   main .section-4 .container {
     width: 98%;
     flex-direction: column;
