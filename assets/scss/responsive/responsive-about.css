@@ -1,0 +1,91 @@
+@media only screen and (max-width: 768px) {
+  header .top-header .container {
+    width: 98%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  header .top-header .container .socials {
+    margin-top: 10px;
+  }
+  header .bottom-header {
+    width: 100%;
+    flex-direction: column;
+  }
+  header .bottom-header .logo {
+    width: 100% !important;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    position: static;
+  }
+  header .bottom-header .logo img {
+    margin: auto;
+  }
+  header .bottom-header nav {
+    margin-left: 0px;
+  }
+  header .bottom-header nav ul {
+    z-index: 111;
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 155px;
+    width: 100%;
+    text-align: center;
+    height: 20vh;
+    font-size: 30px;
+    flex-direction: column;
+    background-color: #0b2830;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  header .bottom-header .search {
+    padding-top: 10px;
+  }
+  header .bottom-header .search #navOpenClose {
+    display: inline-block;
+  }
+  main .section-3 .container {
+    flex-direction: column;
+  }
+  main .section-3 .container .info {
+    width: 98%;
+  }
+  main .section-4 .container .info-1 {
+    flex-direction: column;
+  }
+  main .section-4 .container .info-1 img {
+    width: 80%;
+    margin: auto;
+  }
+  main .section-4 .container .info-1 .info .lines .line-1 {
+    width: 50%;
+  }
+  main .section-4 .container .info-2 {
+    flex-direction: column;
+  }
+  main .section-4 .container .info-2 img {
+    width: 80%;
+    margin-bottom: 10px;
+    margin: auto;
+  }
+  main .section-4 .container .info-2 .info .lines .line-1 {
+    width: 50%;
+  }
+  footer .socials {
+    margin-left: 0px;
+    width: 100% !important;
+  }
+  footer .footer-main .container .cols {
+    flex-direction: column;
+  }
+  footer .footer-main .container .cols .col-1 {
+    width: 98%;
+    margin-bottom: 20px;
+  }
+  footer .footer-main .container .cols .col-3 {
+    margin-top: 10px;
+  }
+  footer .footer-main .container .cols .col-3 iframe {
+    width: 100%;
+  }
+}/*# sourceMappingURL=responsive-about.css.map */
