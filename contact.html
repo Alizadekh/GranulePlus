@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/scss/reset.css" />
+    <link rel="stylesheet" href="./assets/scss/contactUs.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/scss/responsive/responsive-contact.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="container">
+          <div class="contact">
+            <p><i class="fa-solid fa-phone"></i><span>+98 9194451528</span></p>
+            <p>
+              <i class="fa-solid fa-envelope"></i
+              ><span>info@granuleplus.com</span>
+            </p>
+          </div>
+          <button>Offer Request</button>
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          </div>
+          <div class="lang">
+            <div class="custom-select">
+              <select id="language-select">
+                <option
+                  value="turkey"
+                  data-image="./assets/img/languages/turkey.jpeg"
+                >
+                  Turk
+                </option>
+                <option
+                  value="russian"
+                  data-image="./assets/img/languages/russia.jpeg"
+                >
+                  Rus
+                </option>
+                <option
+                  value="english"
+                  data-image="./assets/img/languages/english.jpeg"
+                >
+                  Eng
+                </option>
+                <option
+                  value="iran"
+                  data-image="./assets/img/languages/iran.jpeg"
+                >
+                  Iran
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-header">
+        <div class="logo">
+          <img
+            src="https://granuleplus.com/wp-content/uploads/2020/12/granuleplus.png"
+            alt=""
+          />
+        </div>
+        <nav>
+          <ul id="navigation">
+            <li><a href="">Home</a></li>
+            <li><a href="">Articles</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="">Services</a></li>
+          </ul>
+        </nav>
+        <div class="search">
+          <button id="navOpenClose"><i class="fa-solid fa-bars"></i></button>
+          <input type="text" name="" id="searchInput" />
+          <button class="searchBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="section-1">
+        <div class="container">
+          <h1>Contact Us</h1>
+        </div>
+      </div>
+      <div class="section-2">
+        <div class="container">
+          <h1>Contact GranulePlus</h1>
+          <p>
+            Granuleplus Company is one of the producers and suppliers of
+            recycled plastic granules and compounds. To get more information
+            about the desired product type, price, purchase, sale and export and
+            import, please contact us.
+          </p>
+          <div class="boxes">
+            <div class="box">
+              <i class="fa-solid fa-phone-volume"></i>
+              <h4>Phone Number</h4>
+              <p>
+                +98 9194451528 <br />
+                +9821 56512397
+              </p>
+            </div>
+            <div class="box">
+              <i class="fa-solid fa-envelope"></i>
+              <h4>Email</h4>
+              <p>
+                info@granuleplus.com <br />
+                granuleplus@gmail.com
+              </p>
+            </div>
+            <div class="box">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <h4>Address</h4>
+              <p>
+                No. 40, Tabnak Dead End, Etrat Alley, 17 Shahriver St., Mahdi
+                Abad, Qom old road,
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-3">
+        <div class="container">
+          <div class="form">
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" required />
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+
+            <button onclick="sendEmail()">Send</button>
+          </div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.9150495305657!2d49.84769951196354!3d40.34423045992899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307c19888a3a81%3A0xc253fcb6c530cf3!2sBaku%20Crystal%20Hall!5e0!3m2!1saz!2saz!4v1721904521129!5m2!1saz!2saz"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-start">
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer-main">
+        <div class="container">
+          <div class="cols">
+            <div class="col-1">
+              <img
+                src="https://granuleplus.com/wp-content/uploads/2020/12/granuleplus.png"
+                alt=""
+              />
+              <p>
+                GranulePlus proud of more than 30 years of operational
+                experience one of the leading factories in the field of
+                mechanical, chemical-industrial recycling in the field of
+                polymer waste and plastic after consumption.
+              </p>
+            </div>
+            <div class="col-2">
+              <p>Quick Acces</p>
+              <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Contact</li>
+                <li>Services</li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <p>Location</p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.9150495305657!2d49.84769951196354!3d40.34423045992899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307c19888a3a81%3A0xc253fcb6c530cf3!2sBaku%20Crystal%20Hall!5e0!3m2!1saz!2saz!4v1721904521129!5m2!1saz!2saz"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-end">
+        <p>
+          All rights of this site belong to Granuleplus |
+          <span>Design By Alizadeh</span>
+        </p>
+      </div>
+    </footer>
+    <div class="floating-container">
+      <div class="floating-button"><i class="fa-solid fa-share-nodes"></i></div>
+      <div class="element-container">
+        <span class="float-element tooltip-left">
+          <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        </span>
+        <span class="float-element tooltip-left">
+          <a href="instagram.com"><i class="fa-brands fa-telegram"></i></a>
+        </span>
+        <span class="float-element tooltip-left">
+          <a href="instagram.com"><i class="fa-brands fa-linkedin"></i></a>
+        </span>
+        <span class="float-element tooltip-left">
+          <a href="instagram.com"><i class="fa-brands fa-youtube"></i></a>
+        </span>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/js/contact.js"></script>
+</html>
