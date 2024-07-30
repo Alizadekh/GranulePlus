@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/scss/services.css" />
     <link rel="stylesheet" href="./assets/scss/reset.css" />
-    <link rel="stylesheet" href="./assets/scss/contactUs.css" />
     <link
       rel="stylesheet"
-      href="./assets/scss/responsive/responsive-contact.css"
+      href="./assets/scss/responsive/responsive-services.css"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -20,7 +21,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <title>Contact Us</title>
+    <title>About Us</title>
   </head>
   <body>
     <header>
@@ -43,15 +44,32 @@
           </div>
           <div class="lang">
             <div class="custom-select">
-              <div class="dropdown">
-                <button class="dropbtn">Language</button>
-                <div class="dropdown-content">
-                  <a href="#" data-value="az">Aze</a>
-                  <a href="#" data-value="en">Eng</a>
-                  <a href="#" data-value="ru">Русc</a>
-                  <a href="#" data-value="tr">Türk</a>
-                </div>
-              </div>
+              <select id="language-select">
+                <option
+                  value="turkey"
+                  data-image="./assets/img/languages/turkey.jpeg"
+                >
+                  Turk
+                </option>
+                <option
+                  value="russian"
+                  data-image="./assets/img/languages/russia.jpeg"
+                >
+                  Rus
+                </option>
+                <option
+                  value="english"
+                  data-image="./assets/img/languages/english.jpeg"
+                >
+                  Eng
+                </option>
+                <option
+                  value="iran"
+                  data-image="./assets/img/languages/iran.jpeg"
+                >
+                  Iran
+                </option>
+              </select>
             </div>
           </div>
         </div>
@@ -66,7 +84,7 @@
         <nav>
           <ul id="navigation">
             <li><a href="./index.html">Home</a></li>
-            <li><a href="./certificates.html">Certificates</a></li>
+            <li><a href="">Articles</a></li>
             <li><a href="./about.html">About</a></li>
             <li><a href="./contact.html">Contact</a></li>
             <li><a href="./services.html">Services</a></li>
@@ -84,76 +102,39 @@
     <main>
       <div class="section-1">
         <div class="container">
-          <h1>Contact Us</h1>
+          <h1>Service us</h1>
         </div>
       </div>
-      <div class="section-2">
+      <section class="section-2">
         <div class="container">
-          <h1>Contact GranulePlus</h1>
-          <p>
-            Granuleplus Company is one of the producers and suppliers of
-            recycled plastic granules and compounds. To get more information
-            about the desired product type, price, purchase, sale and export and
-            import, please contact us.
-          </p>
-          <div class="boxes">
-            <div class="box">
-              <i class="fa-solid fa-phone-volume"></i>
-              <h4>Phone Number</h4>
-              <p>
-                +98 9194451528 <br />
-                +9821 56512397
-              </p>
+          <div class="section-2-top">
+            <div class="card">
+              <div class="icon">
+                <i class="fa-brands fa-buromobelexperte"></i>
+              </div>
+              <h3>Export of Granules</h3>
             </div>
-            <div class="box">
-              <i class="fa-solid fa-envelope"></i>
-              <h4>Email</h4>
-              <p>
-                info@granuleplus.com <br />
-                granuleplus@gmail.com
-              </p>
+            <div class="card">
+              <div class="icon">
+                <i class="fa-solid fa-recycle"></i>
+              </div>
+              <h3>Recycled Pellets Supplier</h3>
             </div>
-            <div class="box">
-              <i class="fa-solid fa-map-location-dot"></i>
-              <h4>Address</h4>
-              <p>
-                No. 40, Tabnak Dead End, Etrat Alley, 17 Shahriver St., Mahdi
-                Abad, Qom old road,
-              </p>
+            <div class="card">
+              <div class="icon">
+                <i class="fa-solid fa-vial-circle-check"></i>
+              </div>
+              <h3>Polymer Quality Control</h3>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i class="fa-solid fa-industry"></i>
+              </div>
+              <h3>Producer and Supplier</h3>
             </div>
           </div>
         </div>
-      </div>
-      <div class="section-3">
-        <div class="container">
-          <div class="form">
-            <label for="email">Email</label>
-            <input type="email" id="email" required />
-
-            <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" required />
-
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" required />
-
-            <label for="message">Message</label>
-            <textarea id="message" required></textarea>
-
-            <button onclick="sendEmail()">Send</button>
-          </div>
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.9150495305657!2d49.84769951196354!3d40.34423045992899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307c19888a3a81%3A0xc253fcb6c530cf3!2sBaku%20Crystal%20Hall!5e0!3m2!1saz!2saz!4v1721904521129!5m2!1saz!2saz"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
-      </div>
+      </section>
     </main>
     <footer>
       <div class="footer-start">
@@ -229,5 +210,5 @@
       </div>
     </div>
   </body>
-  <script src="./assets/js/contact.js"></script>
+  <script src="./assets/js/services.js"></script>
 </html>

@@ -42,36 +42,18 @@
   header .bottom-header .search #navOpenClose {
     display: inline-block;
   }
-  main .section-1 .container {
-    width: 90%;
+  main .section-1 .container h1 {
     text-align: center;
   }
   main .section-2 .container {
     width: 98%;
   }
-  main .section-2 .container h1 {
-    width: 90%;
-  }
-  main .section-2 .container p {
-    width: 90%;
-  }
-  main .section-2 .container .boxes {
-    width: 80%;
-    margin: auto;
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-  main .section-2 .container .boxes .box {
-    width: 100%;
-  }
-  main .section-3 .container {
+  main .section-2 .container .section-2-top {
     width: 98%;
+    flex-wrap: wrap;
   }
-  main .section-3 .container .form {
-    width: 90%;
-  }
-  main .section-3 .container .form button {
-    width: 30%;
+  main .section-2 .container .section-2-top .card {
+    width: 50%;
   }
   footer .socials {
     margin-left: 0px;
@@ -90,4 +72,4 @@
   footer .footer-main .container .cols .col-3 iframe {
     width: 100%;
   }
-}/*# sourceMappingURL=responsive-contact.css.map */
+}/*# sourceMappingURL=responsive-services.css.map */

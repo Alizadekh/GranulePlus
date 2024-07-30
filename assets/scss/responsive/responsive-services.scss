@@ -47,38 +47,18 @@
   }
   main {
     .section-1 {
-      .container {
-        width: 90%;
+      .container h1 {
         text-align: center;
       }
     }
     .section-2 {
       .container {
         width: 98%;
-        h1 {
-          width: 90%;
-        }
-        p {
-          width: 90%;
-        }
-        .boxes {
-          width: 80%;
-          margin: auto;
+        .section-2-top {
+          width: 98%;
           flex-wrap: wrap;
-          gap: 5px;
-          .box {
-            width: 100%;
-          }
-        }
-      }
-    }
-    .section-3 {
-      .container {
-        width: 98%;
-        .form {
-          width: 90%;
-          button {
-            width: 30%;
+          .card {
+            width: 50%;
           }
         }
       }

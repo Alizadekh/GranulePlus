@@ -4,10 +4,8 @@
       .container {
         width: 98%;
         flex-wrap: wrap;
+        gap: 30px;
         justify-content: space-around;
-        .socials {
-          margin-top: 10px;
-        }
       }
     }
     .bottom-header {
@@ -31,7 +29,7 @@
           top: 155px;
           width: 100%;
           text-align: center;
-          height: 20vh;
+          height: 25vh;
           font-size: 30px;
           flex-direction: column;
           background-color: #0b2830;

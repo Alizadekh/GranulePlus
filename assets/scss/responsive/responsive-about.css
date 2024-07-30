@@ -2,10 +2,8 @@
   header .top-header .container {
     width: 98%;
     flex-wrap: wrap;
+    gap: 30px;
     justify-content: space-around;
-  }
-  header .top-header .container .socials {
-    margin-top: 10px;
   }
   header .bottom-header {
     width: 100%;
@@ -31,7 +29,7 @@
     top: 155px;
     width: 100%;
     text-align: center;
-    height: 20vh;
+    height: 25vh;
     font-size: 30px;
     flex-direction: column;
     background-color: #0b2830;

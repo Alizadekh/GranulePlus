@@ -1,4 +1,126 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+@keyframes come-in {
+  0% {
+    transform: translatey(100px);
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(-50px) scale(0.4);
+  }
+  70% {
+    transform: translateX(0px) scale(1.2);
+  }
+  100% {
+    transform: translatey(0px) scale(1);
+    opacity: 1;
+  }
+}
+.floating-container {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 0;
+  right: 0;
+  margin: 35px 25px;
+}
+
+.floating-container:hover {
+  height: 350px;
+}
+
+.floating-container:hover .floating-button {
+  box-shadow: 0 10px 25px #fdb60d;
+  transform: translatey(5px);
+  transition: all 0.3s;
+}
+
+.floating-container:hover .element-container .float-element:nth-child(1) {
+  animation: come-in 0.4s forwards 0.2s;
+}
+
+.floating-container:hover .element-container .float-element:nth-child(2) {
+  animation: come-in 0.4s forwards 0.4s;
+}
+
+.floating-container:hover .element-container .float-element:nth-child(3) {
+  animation: come-in 0.4s forwards 0.6s;
+}
+
+.floating-container:hover .element-container .float-element:nth-child(4) {
+  animation: come-in 0.4s forwards 0.8s;
+}
+
+.floating-container .floating-button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #fdb60d;
+  bottom: 0;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: white;
+  line-height: 65px;
+  text-align: center;
+  font-size: 20px;
+  z-index: 100;
+  box-shadow: 0 10px 25px -5px rgba(44, 179, 240, 0.6);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.floating-container .floating-button i {
+  font-size: 20px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.floating-container .float-element {
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 15px auto;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  line-height: 50px;
+  z-index: 0;
+  opacity: 0;
+  transform: translateY(100px);
+}
+.floating-container .float-element a {
+  color: white;
+  font-size: 22px;
+}
+
+.floating-container .float-element .material-icons {
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+.floating-container .float-element:nth-child(1) {
+  background: #42a5f5;
+  box-shadow: 0 20px 20px -10px rgba(66, 165, 245, 0.5);
+}
+
+.floating-container .float-element:nth-child(2) {
+  background: #4caf50;
+  box-shadow: 0 20px 20px -10px rgba(76, 175, 80, 0.5);
+}
+
+.floating-container .float-element:nth-child(3) {
+  background: #ff9800;
+  box-shadow: 0 20px 20px -10px rgba(255, 152, 0, 0.5);
+}
+
+.floating-container .float-element:nth-child(4) {
+  background: #eb1708;
+  box-shadow: 0 20px 20px -10px rgba(255, 152, 0, 0.5);
+}
+
 header {
   background-color: #0b2830;
   padding: 10px 0;
@@ -180,101 +302,42 @@ header .bottom-header .search button {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.section-2 {
-  padding: 30px 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
 .section-2 .container {
   width: 80%;
   margin: auto;
+  padding: 30px 0;
 }
-.section-2 .container h1 {
-  text-align: center;
-  color: #1a8395;
-  margin: auto;
-  width: 40%;
-  border-bottom: 6px solid orange;
-  padding-bottom: 10px;
-}
-.section-2 .container p {
-  width: 70%;
-  text-align: center;
-  margin: 20px auto;
-}
-.section-2 .container .boxes {
+.section-2 .container .section-2-top {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 30px;
 }
-.section-2 .container .boxes .box {
-  width: 30%;
+.section-2 .container .section-2-top .card {
+  width: 23%;
   text-align: center;
-  background-color: #f9f9f9;
-  border: 1px solid #ff9800;
-  padding: 10px;
-}
-.section-2 .container .boxes .box i {
-  font-size: 40px;
-  color: #096e82;
-  margin: 10px 0;
-}
-.section-2 .container .boxes .box h4 {
-  color: #fdb60d;
-  font-weight: 300;
-}
-.section-2 .container .boxes .box p {
-  font-size: 14px;
-}
-
-.section-3 .container {
-  width: 80%;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: auto;
-}
-.section-3 .container .form {
-  width: 80%;
-  margin: auto;
-  background-color: #f9f9f9;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-.section-3 .container .form input {
-  margin: 10px 0;
-  border: 1px solid #fdb60d;
+  padding: 20px 20px;
+  background-color: white;
   border-radius: 10px;
-  padding: 3px;
+  box-shadow: -2px 16px 96px -16px rgba(0, 0, 0, 0.81);
+  -webkit-box-shadow: -2px 16px 96px -16px rgba(0, 0, 0, 0.81);
+  -moz-box-shadow: -2px 16px 96px -16px rgba(0, 0, 0, 0.81);
 }
-.section-3 .container .form label {
-  font-size: 14px;
-  color: #096e82;
-}
-.section-3 .container .form textarea {
-  margin: 10px 0;
-  border: 1px solid #fdb60d;
-  border-radius: 10px;
-  height: 10vh;
-  padding: 5px;
-}
-.section-3 .container .form button {
-  width: 10%;
+.section-2 .container .section-2-top .card .icon {
+  width: 50%;
+  padding: 20px 0;
   margin: auto;
-  border: none;
-  background-color: #096e82;
-  padding: 5px;
-  color: white;
-  cursor: pointer;
-  border-radius: 10px;
-  transition: 0.4s;
-}
-.section-3 .container .form button:hover {
+  border-radius: 100%;
   background-color: #fdb60d;
-  color: #096e82;
 }
-.section-3 .container iframe {
-  width: 100%;
-  opacity: 70%;
-  margin-bottom: 20px;
+.section-2 .container .section-2-top .card .icon i {
+  font-size: 40px;
+  color: white;
+}
+.section-2 .container .section-2-top .card h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 20px 0;
 }
 
 footer .socials {
@@ -345,125 +408,4 @@ footer .footer-end p {
 }
 footer .footer-end p span {
   color: white;
-}
-@keyframes come-in {
-  0% {
-    transform: translatey(100px);
-    opacity: 0;
-  }
-  30% {
-    transform: translateX(-50px) scale(0.4);
-  }
-  70% {
-    transform: translateX(0px) scale(1.2);
-  }
-  100% {
-    transform: translatey(0px) scale(1);
-    opacity: 1;
-  }
-}
-.floating-container {
-  position: fixed;
-  width: 100px;
-  height: 100px;
-  bottom: 0;
-  right: 0;
-  margin: 35px 25px;
-}
-
-.floating-container:hover {
-  height: 350px;
-}
-
-.floating-container:hover .floating-button {
-  box-shadow: 0 10px 25px #fdb60d;
-  transform: translatey(5px);
-  transition: all 0.3s;
-}
-
-.floating-container:hover .element-container .float-element:nth-child(1) {
-  animation: come-in 0.4s forwards 0.2s;
-}
-
-.floating-container:hover .element-container .float-element:nth-child(2) {
-  animation: come-in 0.4s forwards 0.4s;
-}
-
-.floating-container:hover .element-container .float-element:nth-child(3) {
-  animation: come-in 0.4s forwards 0.6s;
-}
-
-.floating-container:hover .element-container .float-element:nth-child(4) {
-  animation: come-in 0.4s forwards 0.8s;
-}
-
-.floating-container .floating-button {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background: #fdb60d;
-  bottom: 0;
-  border-radius: 50%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  color: white;
-  line-height: 65px;
-  text-align: center;
-  font-size: 20px;
-  z-index: 100;
-  box-shadow: 0 10px 25px -5px rgba(44, 179, 240, 0.6);
-  cursor: pointer;
-  transition: all 0.3s;
-}
-.floating-container .floating-button i {
-  font-size: 20px;
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-}
-
-.floating-container .float-element {
-  position: relative;
-  display: block;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin: 15px auto;
-  color: white;
-  font-weight: 500;
-  text-align: center;
-  line-height: 50px;
-  z-index: 0;
-  opacity: 0;
-  transform: translateY(100px);
-}
-.floating-container .float-element a {
-  color: white;
-  font-size: 22px;
-}
-
-.floating-container .float-element .material-icons {
-  vertical-align: middle;
-  font-size: 16px;
-}
-
-.floating-container .float-element:nth-child(1) {
-  background: #42a5f5;
-  box-shadow: 0 20px 20px -10px rgba(66, 165, 245, 0.5);
-}
-
-.floating-container .float-element:nth-child(2) {
-  background: #4caf50;
-  box-shadow: 0 20px 20px -10px rgba(76, 175, 80, 0.5);
-}
-
-.floating-container .float-element:nth-child(3) {
-  background: #ff9800;
-  box-shadow: 0 20px 20px -10px rgba(255, 152, 0, 0.5);
-}
-
-.floating-container .float-element:nth-child(4) {
-  background: #eb1708;
-  box-shadow: 0 20px 20px -10px rgba(255, 152, 0, 0.5);
-}/*# sourceMappingURL=contactUs.css.map */
+}/*# sourceMappingURL=services.css.map */
