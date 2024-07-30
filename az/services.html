@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="az">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/scss/services.css" />
-    <link rel="stylesheet" href="./assets/scss/reset.css" />
+    <link rel="stylesheet" href="/assets/scss/services.css" />
+    <link rel="stylesheet" href="/assets/scss/reset.css" />
     <link
       rel="stylesheet"
-      href="./assets/scss/responsive/responsive-services.css"
+      href="/assets/scss/responsive/responsive-services.css"
     />
 
     <link
@@ -21,7 +21,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <title>About Us</title>
+    <title>Haqqımızda</title>
   </head>
   <body>
     <header>
@@ -34,7 +34,7 @@
               ><span>info@granuleplus.com</span>
             </p>
           </div>
-          <button>Offer Request</button>
+          <button>Təklif Sorğusu</button>
           <div class="socials">
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-telegram"></i></a>
@@ -44,32 +44,15 @@
           </div>
           <div class="lang">
             <div class="custom-select">
-              <select id="language-select">
-                <option
-                  value="turkey"
-                  data-image="./assets/img/languages/turkey.jpeg"
-                >
-                  Turk
-                </option>
-                <option
-                  value="russian"
-                  data-image="./assets/img/languages/russia.jpeg"
-                >
-                  Rus
-                </option>
-                <option
-                  value="english"
-                  data-image="./assets/img/languages/english.jpeg"
-                >
-                  Eng
-                </option>
-                <option
-                  value="iran"
-                  data-image="./assets/img/languages/iran.jpeg"
-                >
-                  Iran
-                </option>
-              </select>
+              <div class="dropdown">
+                <button class="dropbtn">Dil</button>
+                <div class="dropdown-content">
+                  <a href="#" data-value="az">Az</a>
+                  <a href="#" data-value="en">İng</a>
+                  <a href="#" data-value="ru">Rus</a>
+                  <a href="#" data-value="tr">Türk</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -83,11 +66,11 @@
         </div>
         <nav>
           <ul id="navigation">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="">Articles</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./services.html">Services</a></li>
+            <li><a href="./index.html">Ana Səhifə</a></li>
+            <li><a href="./certificates.html">Sertifikatlar</a></li>
+            <li><a href="./about.html">Haqqımızda</a></li>
+            <li><a href="./contact.html">Əlaqə</a></li>
+            <li><a href="./services.html">Xidmətlər</a></li>
           </ul>
         </nav>
         <div class="search">
@@ -102,7 +85,7 @@
     <main>
       <div class="section-1">
         <div class="container">
-          <h1>Service us</h1>
+          <h1>Xidmətlərimiz</h1>
         </div>
       </div>
       <section class="section-2">
@@ -112,25 +95,25 @@
               <div class="icon">
                 <i class="fa-brands fa-buromobelexperte"></i>
               </div>
-              <h3>Export of Granules</h3>
+              <h3>Granul İxracatı</h3>
             </div>
             <div class="card">
               <div class="icon">
                 <i class="fa-solid fa-recycle"></i>
               </div>
-              <h3>Recycled Pellets Supplier</h3>
+              <h3>Təkrar Emal edilmiş Peletlərin Təchizatçısı</h3>
             </div>
             <div class="card">
               <div class="icon">
                 <i class="fa-solid fa-vial-circle-check"></i>
               </div>
-              <h3>Polymer Quality Control</h3>
+              <h3>Polimer Keyfiyyətinin Nəzarəti</h3>
             </div>
             <div class="card">
               <div class="icon">
                 <i class="fa-solid fa-industry"></i>
               </div>
-              <h3>Producer and Supplier</h3>
+              <h3>İstehsalçı və Təchizatçı</h3>
             </div>
           </div>
         </div>
@@ -155,23 +138,22 @@
                 alt=""
               />
               <p>
-                GranulePlus proud of more than 30 years of operational
-                experience one of the leading factories in the field of
-                mechanical, chemical-industrial recycling in the field of
-                polymer waste and plastic after consumption.
+                GranulePlus 30 ildən artıq təcrübəyə malikdir və polimer
+                tullantıları və plastiklərin emalında aparıcı fabriklərdən
+                biridir.
               </p>
             </div>
             <div class="col-2">
-              <p>Quick Acces</p>
+              <p>Tez Giriş</p>
               <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Contact</li>
-                <li>Services</li>
+                <li>Ana Səhifə</li>
+                <li>Haqqımızda</li>
+                <li>Əlaqə</li>
+                <li>Xidmətlər</li>
               </ul>
             </div>
             <div class="col-3">
-              <p>Location</p>
+              <p>Yer</p>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.9150495305657!2d49.84769951196354!3d40.34423045992899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307c19888a3a81%3A0xc253fcb6c530cf3!2sBaku%20Crystal%20Hall!5e0!3m2!1saz!2saz!4v1721904521129!5m2!1saz!2saz"
                 width="600"
@@ -187,8 +169,8 @@
       </div>
       <div class="footer-end">
         <p>
-          All rights of this site belong to Granuleplus |
-          <span>Design By Alizadeh</span>
+          Bu saytın bütün hüquqları Granuleplus-a məxsusdur |
+          <span>Alizadeh tərəfindən Dizayn</span>
         </p>
       </div>
     </footer>
@@ -210,5 +192,6 @@
       </div>
     </div>
   </body>
-  <script src="./assets/js/services.js"></script>
+  <script src="/assets/js/services.js"></script>
+  <script src="/assets/js/lang.js"></script>
 </html>

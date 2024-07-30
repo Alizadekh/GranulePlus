@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/scss/about.css" />
-    <link rel="stylesheet" href="./assets/scss/reset.css" />
+    <link rel="stylesheet" href="/assets/scss/about.css" />
+    <link rel="stylesheet" href="/assets/scss/reset.css" />
     <link
       rel="stylesheet"
-      href="./assets/scss/responsive/responsive-about.css"
+      href="/assets/scss/responsive/responsive-about.css"
     />
     <link
       rel="stylesheet"
@@ -33,7 +33,7 @@
               ><span>info@granuleplus.com</span>
             </p>
           </div>
-          <button>Offer Request</button>
+          <button>Təklif Ver</button>
           <div class="socials">
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-telegram"></i></a>
@@ -43,32 +43,15 @@
           </div>
           <div class="lang">
             <div class="custom-select">
-              <select id="language-select">
-                <option
-                  value="turkey"
-                  data-image="./assets/img/languages/turkey.jpeg"
-                >
-                  Turk
-                </option>
-                <option
-                  value="russian"
-                  data-image="./assets/img/languages/russia.jpeg"
-                >
-                  Rus
-                </option>
-                <option
-                  value="english"
-                  data-image="./assets/img/languages/english.jpeg"
-                >
-                  Eng
-                </option>
-                <option
-                  value="iran"
-                  data-image="./assets/img/languages/iran.jpeg"
-                >
-                  Iran
-                </option>
-              </select>
+              <div class="dropdown">
+                <button class="dropbtn">Dillər</button>
+                <div class="dropdown-content">
+                  <a href="#" data-value="az">Az</a>
+                  <a href="#" data-value="en">İng</a>
+                  <a href="#" data-value="ru">Rus</a>
+                  <a href="#" data-value="tr">Türk</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -82,11 +65,11 @@
         </div>
         <nav>
           <ul id="navigation">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="">Articles</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./services.html">Services</a></li>
+            <li><a href="./index.html">Ana səhifə</a></li>
+            <li><a href="">Məqalələr</a></li>
+            <li><a href="./about.html">Haqqımızda</a></li>
+            <li><a href="./contact.html">Əlaqə</a></li>
+            <li><a href="./services.html">Xidmətlər</a></li>
           </ul>
         </nav>
         <div class="search">
@@ -98,56 +81,60 @@
         </div>
       </div>
     </header>
+
     <main>
       <div class="section-1">
         <div class="container">
-          <h1>Plastic recycling company</h1>
+          <h1>Plastik təkrar emalı şirkəti</h1>
         </div>
       </div>
+
       <div class="section-2">
         <div class="container">
-          <h2>Plastic recycling company</h2>
+          <h2>Plastik təkrar emalı şirkəti</h2>
           <p>
-            Granuleplus as a plastic recycling company and recycled pellets
-            supplier is proud of more than 30 years of operational experience
-            one of the leading factories in the field of mechanical,
-            chemical-industrial recycling in the field of polymer waste and
-            plastic after consumption. In today’s world, with increasing
-            population, waste production is also increasing rapidly; Therefore,
-            waste management has become an important capability. In this era,
-            the circular and green economy (resource-based economy) plays an
-            important role and we are happy to be one of the pioneers in this
-            recycling industry. Granule Plus has made it its goal to help
-            strengthen the circular economy by increasing the supply of quality
-            recycled plastics to industry, so that it can make a small
-            contribution to reducing the use of virgin plastics in packaging and
-            industry, and for a more sustainable future. Make.
+            Granuleplus plastik təkrar emalı şirkəti və təkrar emal edilmiş
+            qranul təchizatçısı olaraq, polimer tullantıları və istifadədən
+            sonra plastik tullantıların mexaniki, kimya-sənaye təkrar emalı
+            sahəsində 30 ildən çox fəaliyyət təcrübəsi ilə fəxr edir. Bugünkü
+            dünyada əhali artdıqca, tullantı istehsalı da sürətlə artır; Buna
+            görə də, tullantı idarəçiliyi mühüm qabiliyyətə çevrilmişdir. Bu
+            dövrdə dövri və yaşıl iqtisadiyyat (resurslara əsaslanan
+            iqtisadiyyat) mühüm rol oynayır və biz bu təkrar emal sənayesində
+            öncülərdən biri olmağımızdan məmnunuq. Granule Plus keyfiyyətli
+            təkrar emal edilmiş plastiklərin sənayeyə təchizini artıraraq dövri
+            iqtisadiyyatı gücləndirmək məqsədini qarşısına qoyub ki, beləliklə,
+            qablaşdırma və sənayedə bakir plastiklərin istifadəsini azaltmağa
+            kiçik bir töhfə verə bilsin və daha davamlı gələcək üçün çalışsın.
           </p>
-          <h2>Target GranulePlus</h2>
+          <h2>GranulePlus Məqsədi</h2>
           <p>
-            We have entered the industry with the slogan of providing quality
-            recycled materials to brand owners and related businesses. We hope
-            to attract the attention of business owners in this field and
-            provide you with the best materials, considering the brilliant
-            history that we have gained in these 30 years. Our goal is to gain
-            customer satisfaction and provide the best and highest quality
-            recycled materials.
+            Biz keyfiyyətli təkrar emal edilmiş materialların brend sahiblərinə
+            və əlaqəli bizneslərə təqdim edilməsi şüarı ilə sənayəyə daxil
+            olmuşuq. Ümid edirik ki, bu sahədə biznes sahiblərinin diqqətini
+            cəlb edəcək və bu 30 ildə əldə etdiyimiz parlaq tarixi nəzərə alaraq
+            sizə ən yaxşı materialları təqdim edəcəyik. Məqsədimiz müştəri
+            məmnuniyyətini qazanmaq və ən yaxşı və yüksək keyfiyyətli təkrar
+            emal edilmiş materialları təmin etməkdir.
           </p>
         </div>
       </div>
+
       <div class="section-3">
         <div class="container">
           <div class="info">
-            <h2>Reduce the use of virgin raw materials</h2>
+            <h2>Xammal istifadəsini azaldın</h2>
             <p>
-              Only 9% of the plastic produced is recycled. Recycling
-              technologies create new (recycled) raw materials and thus reduce
-              environmental pollution. Granuleplus as a plastic recycling
-              company uses its experience, expertise and knowledge to achieve
-              higher quality and more competitively priced products as recycled
-              pellets for use in high-demand plastic applications in a variety
-              of industries, including automotive and consumer products. Reduce
-              raw material consumption and protect the environment.
+              İstehsal olunan plastiklərin yalnız 9%-i təkrar emal edilir.
+              Təkrar emal texnologiyaları yeni (təkrar emal edilmiş) xammallar
+              yaradır və bununla da ətraf mühitin çirklənməsini azaldır. Plastik
+              təkrar emalı şirkəti olan Granuleplus, təcrübə, bilik və
+              bacarıqlarından istifadə edərək, yüksək tələbat olan plastik
+              tətbiqlərində, o cümlədən avtomobil və istehlak məhsulları
+              sənayesində istifadə üçün təkrar emal edilmiş qranullar kimi daha
+              yüksək keyfiyyətli və daha rəqabətədavamlı qiymətə məhsullar əldə
+              etməyə çalışır. Xammal istehlakını azaldın və ətraf mühiti
+              qoruyun.
             </p>
           </div>
           <div class="img">
@@ -158,6 +145,7 @@
           </div>
         </div>
       </div>
+
       <div class="section-4">
         <div class="container">
           <div class="info-1">
@@ -167,32 +155,33 @@
             />
             <div class="info">
               <p>
-                Types of recycled pellets (granules) and compounds <br />
-                quality guarantee <br />
-                Types of granules
+                Təkrar emal edilmiş qranullar (granullar) və kompozitlər növləri
+                <br />
+                keyfiyyət zəmanəti <br />
+                Qranul növləri
               </p>
               <div class="thumbs">
                 <div class="thumb">
                   <i class="fa-solid fa-microchip"></i>
                   <p>
-                    • Ensure minimal physical and mechanical loss during the
-                    granulation production process
+                    • Qranul istehsalı prosesində minimal fiziki və mexaniki
+                    itkilərin təmin edilməsi
                   </p>
                 </div>
                 <div class="thumb">
                   <i class="fa-solid fa-shield-heart"></i>
                   <p>
-                    • Specialized production of granules (PP- PE- ABS - PA-PC -
-                    HIPS, GPPS…) using complete equipment
+                    • Tam təchizatlı avadanlıqlarla qranul (PP- PE- ABS - PA-PC
+                    - HIPS, GPPS...) xüsusi istehsalı
                   </p>
                 </div>
               </div>
               <div class="lines">
-                <div class="line line-1"><p>Brilliant record - 30%</p></div>
+                <div class="line line-1"><p>Brilliant rekord - 30%</p></div>
                 <div class="line line-2">
-                  <p>Customer Satisfaction - 100%</p>
+                  <p>Müştəri məmnuniyyəti - 100%</p>
                 </div>
-                <div class="line line-3"><p>Quality product - 90%</p></div>
+                <div class="line line-3"><p>Keyfiyyətli məhsul - 90%</p></div>
               </div>
             </div>
           </div>
@@ -202,114 +191,118 @@
             alt="" />
             <div class="info">
               <p>
-                The production capacity of Granuleplus Company reaches 60,000
-                tons per year, which is supplied in 25 kg bags and jumbo bags.
-                Granuleplus has taken a big step in "increasing the quality of
-                the product" for dear consumers by producing a variety of
-                recycled pellets and uniform compounds by minimizing obstacles
-                such as fragility and unusability of materials that may occur
-                during the production process. We achieved this important goal.
+                Granuleplus şirkətinin istehsal gücü ildə 60,000 tona çatır ki,
+                bu da 25 kq-lıq kisələrdə və böyük torbalarda təmin edilir.
+                Granuleplus, istehsal prosesi zamanı yarana biləcək
+                materialların kövrəkliyi və istifadəyə yararsızlığı kimi
+                maneələri minimuma endirərək müxtəlif təkrar emal edilmiş
+                qranullar və vahid kompozitlər istehsal etməklə "məhsulun
+                keyfiyyətini artırmaq" üçün böyük bir addım atmışdır. Bu mühüm
+                məqsədə nail olduq.
               </p>
 
               <ul>
-                <li>Professional support</li>
-                <li>Quick response 24/7</li>
+                <li>Peşəkar dəstək</li>
+                <li>Tez cavab 24/7</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+
       <div class="section-5">
         <div class="container">
-          <h2>vision</h2>
+          <h2>Görüş</h2>
           <p>
-            Plastic recycling companies are all responsible for improving the
-            environment and having a clean world. To this end, the style of
-            waste disposal must change. Life without waste is not easy and it
-            requires modern knowledge and equipment. It must be ensured that no
-            resources are wasted and that everything capable of returning to the
-            production cycle is recovered. We have entered this field with the
-            slogan of <strong>“We give new life to plastic”</strong>. We are
-            glad that we have become a customer-friendly company in this field
-            by providing first-class services to them.
+            Plastik təkrar emalı şirkətləri ətraf mühiti yaxşılaşdırmaq və təmiz
+            bir dünya üçün məsuliyyət daşıyır. Bu məqsədlə tullantıların idarə
+            edilməsi tərzi dəyişməlidir. Tullantısız həyat asan deyil və müasir
+            bilik və avadanlıqlar tələb edir. Heç bir resursun israf
+            edilmədiyinə və istehsal dövriyyəsinə qayıtmaq qabiliyyətinə malik
+            hər şeyin bərpa edildiyinə əmin olunmalıdır. Biz bu sahəyə
+            <strong>"Biz plastikə yeni həyat veririk"</strong> şüarı ilə daxil
+            olmuşuq. Bu sahədə müştərilərimizə birinci dərəcəli xidmətlər
+            göstərməklə müştəri dostu bir şirkət olduğumuz üçün məmnunuq.
           </p>
-          <h3>Granuleplus Objectives</h3>
+          <h3>Granuleplus Məqsədləri</h3>
           <ul>
-            <li>✅ A small contribution to a more sustainable future</li>
-            <li>✅ Expand your presence in domestic and foreign markets</li>
+            <li>✅ Daha davamlı bir gələcəyə kiçik bir töhfə</li>
+            <li>✅ Daxili və xarici bazarlarda iştirakını genişləndirmək</li>
             <li>
-              ✅ Increasing Iran's exports and growing its share in the global
-              markets of the plastics industry
+              ✅ İranın ixracını artırmaq və plastik sənayesinin qlobal
+              bazarlarında payını artırmaq
             </li>
           </ul>
-          <h3>Information about plastic recycling companies</h3>
+          <h3>Plastik təkrar emalı şirkətləri haqqında məlumat</h3>
           <p>
-            “Plastic recycling company” is a broad term, so I need more
-            information to understand what you’re looking for. Here are some
-            possibilities:
+            "Plastik təkrar emalı şirkəti" geniş bir termindir, buna görə nə
+            axtardığınızı başa düşmək üçün daha çox məlumata ehtiyacım var.
+            Budur bəzi ehtimallar:
           </p>
-          <h4>Types of plastic recycling companies</h4>
-          <p>There are many types of plastic recycling companies, including:</p>
+          <h4>Plastik təkrar emalı şirkətləri növləri</h4>
+          <p>Bir çox növ plastik təkrar emalı şirkətləri var, o cümlədən:</p>
           <ul>
             <li>
-              Material recovery facilities (MRFs): These facilities sort and
-              process recyclable materials, including plastic, from households
-              and businesses.
+              Materialların bərpası obyektləri (MRF-lər): Bu obyektlər evlərdən
+              və müəssisələrdən gələn təkrar emal olunan materialları, o
+              cümlədən plastikləri çeşidləyir və emal edir.
             </li>
             <li>
-              Processors: These companies convert recycled plastic into new
-              products, such as bottles, bags, and clothing.
+              Prosessorlar: Bu şirkətlər təkrar emal edilmiş plastikləri yeni
+              məhsullara, məsələn, şüşələrə, çantalara və geyimlərə çevirirlər.
             </li>
             <li>
-              Manufacturers: These companies use recycled plastic to make new
-              products.
+              İstehsalçılar: Bu şirkətlər təkrar emal edilmiş plastikdən yeni
+              məhsullar hazırlayır.
             </li>
             <li>
-              Recyclers: These companies collect and recycle plastic waste.
+              Təkrar emal edənlər: Bu şirkətlər plastik tullantıları toplayır və
+              təkrar emal edir.
             </li>
           </ul>
-          <h4>Benefits of plastic recycling</h4>
+          <h4>Plastik təkrar emalının faydaları</h4>
           <ul>
             <li>
-              Reduced pollution: Plastic recycling helps to reduce the amount of
-              plastic that ends up in landfills and incinerators.
+              Azaldılmış çirklənmə: Plastik təkrar emalı zibilxanalara və
+              yandırıcılara düşən plastik miqdarını azaldır.
             </li>
             <li>
-              Conservation of resources: Plastic recycling conserves natural
-              resources, such as oil and water.
+              Resursların qorunması: Plastik təkrar emalı təbii resursları,
+              məsələn, neft və suyu qoruyur.
             </li>
             <li>
-              Creation of jobs: The plastic recycling industry creates jobs in
-              the collection, sorting, processing, and manufacturing of recycled
-              plastic.
+              İş yerlərinin yaradılması: Plastik təkrar emalı sənayesi təkrar
+              emal edilmiş plastiklərin toplanması, çeşidlənməsi, emalı və
+              istehsalı sahəsində iş yerləri yaradır.
             </li>
           </ul>
-          <h4>Challenges of plastic recycling</h4>
+          <h4>Plastik təkrar emalının problemləri</h4>
           <ul>
             <li>
-              Contamination: Plastic recycling facilities can be contaminated
-              with other materials, such as food and paper, which can make it
-              difficult to recycle the plastic.
+              Çirklənmə: Plastik təkrar emalı obyektləri digər materiallarla,
+              məsələn, qida və kağızla çirklənə bilər ki, bu da plastiklərin
+              təkrar emalını çətinləşdirə bilər.
             </li>
             <li>
-              Economics: The economics of plastic recycling can be challenging,
-              as the price of recycled plastic can fluctuate.
+              İqtisadiyyat: Plastik təkrar emalı iqtisadiyyatı çətin ola bilər,
+              çünki təkrar emal edilmiş plastiklərin qiyməti dəyişə bilər.
             </li>
             <li>
-              Public awareness: Many people are not aware of the importance of
-              recycling plastic or how to do it properly.
+              İctimai məlumatlılıq: Bir çox insan plastiklərin təkrar emalının
+              vacibliyi və necə düzgün edilməsi barədə məlumatlı deyil.
             </li>
           </ul>
           <p>
-            You can get more information about recycled pellets, prices and
-            shipping methods through the mentioned communication channels.
+            Təkrar emal edilmiş qranullar, qiymətlər və çatdırılma üsulları
+            haqqında daha çox məlumatı qeyd olunan rabitə kanalları vasitəsilə
+            əldə edə bilərsiniz.
           </p>
           <div class="contact">
             <p>WhatsApp: +989194451528</p>
             <p>Email: info@granuleplus.com</p>
             <p>Website: <a href="http://granuleplus.com">granuleplus.com</a></p>
             <p>
-              Social Media:
+              Sosial media:
               <a href="http://instagram.com/granuleplus">granuleplus</a>
             </p>
           </div>
@@ -335,23 +328,23 @@
                 alt=""
               />
               <p>
-                GranulePlus proud of more than 30 years of operational
-                experience one of the leading factories in the field of
-                mechanical, chemical-industrial recycling in the field of
-                polymer waste and plastic after consumption.
+                GranulePlus, 30 ildən artıq əməliyyat təcrübəsi ilə polimer
+                tullantıları və istehlak sonrası plastik sahəsində mexaniki,
+                kimyəvi-sənaye geri dönüşüm sahəsində aparıcı fabriklərdən
+                biridir.
               </p>
             </div>
             <div class="col-2">
-              <p>Quick Acces</p>
+              <p>Tez Giriş</p>
               <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Contact</li>
-                <li>Services</li>
+                <li>Ana Səhifə</li>
+                <li>Haqqımızda</li>
+                <li>Əlaqə</li>
+                <li>Xidmətlər</li>
               </ul>
             </div>
             <div class="col-3">
-              <p>Location</p>
+              <p>Ərazi</p>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.9150495305657!2d49.84769951196354!3d40.34423045992899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307c19888a3a81%3A0xc253fcb6c530cf3!2sBaku%20Crystal%20Hall!5e0!3m2!1saz!2saz!4v1721904521129!5m2!1saz!2saz"
                 width="600"
@@ -367,11 +360,12 @@
       </div>
       <div class="footer-end">
         <p>
-          All rights of this site belong to Granuleplus |
-          <span>Design By Alizadeh</span>
+          Bu saytın bütün hüquqları Granuleplus-a məxsusdur |
+          <span>Təqdim edən: Alizadeh</span>
         </p>
       </div>
     </footer>
+
     <div class="floating-container">
       <div class="floating-button"><i class="fa-solid fa-share-nodes"></i></div>
       <div class="element-container">
@@ -390,5 +384,6 @@
       </div>
     </div>
   </body>
-  <script src="./assets/js/about.js"></script>
+  <script src="/assets/js/about.js"></script>
+  <script src="/assets/js/lang.js"></script>
 </html>
