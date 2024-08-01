@@ -37,8 +37,10 @@ let navOpen = false;
 navBtn.addEventListener("click", function () {
   if (navOpen) {
     navigation.style.display = "none";
+    navBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`;
   } else {
     navigation.style.display = "block";
+    navBtn.innerHTML = `<i class="fa-solid fa-x"></i>`;
   }
   navOpen = !navOpen;
 });
