@@ -28,8 +28,6 @@
           position: fixed;
           display: none;
           padding-top: 50%;
-          display: flex;
-          gap: 50px !important;
           right: 0;
           top: 0px;
           width: 50%;
@@ -41,6 +39,7 @@
           border-bottom-left-radius: 20px;
           border-bottom-right-radius: 20px;
           li {
+            margin: 20px 0 !important;
             a {
               font-size: 20px;
             }

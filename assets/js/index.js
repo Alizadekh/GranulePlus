@@ -40,6 +40,7 @@ var swiper = new Swiper(".scrollswiper", {
 // Navbar Open Mobile
 const navBtn = document.querySelector("#navOpenClose");
 const navigation = document.querySelector("#navigation");
+
 let navOpen = false;
 
 navBtn.addEventListener("click", function () {
