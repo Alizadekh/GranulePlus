@@ -1,4 +1,7 @@
 @media only screen and (max-width: 768px) {
+  header {
+    position: relative;
+  }
   header .top-header .container {
     width: 98%;
     flex-wrap: wrap;
@@ -20,21 +23,28 @@
   }
   header .bottom-header nav {
     margin-left: 0px;
+    display: flex;
   }
   header .bottom-header nav ul {
     z-index: 111;
-    position: absolute;
+    position: fixed;
     display: none;
-    left: 0;
-    top: 155px;
-    width: 100%;
+    padding-top: 50%;
+    display: flex;
+    gap: 50px !important;
+    right: 0;
+    top: 0px;
+    width: 50%;
     text-align: center;
-    height: 25vh;
+    height: 110vh;
     font-size: 30px;
     flex-direction: column;
     background-color: #0b2830;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+  }
+  header .bottom-header nav ul li a {
+    font-size: 20px;
   }
   header .bottom-header .search {
     padding-top: 10px;
