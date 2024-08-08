@@ -215,7 +215,7 @@ header .bottom-header .logo {
   justify-content: end;
   padding: 10px 20px;
   position: absolute;
-  bottom: -50px;
+  bottom: -70px;
   -webkit-clip-path: polygon(0 0, 100% 0%, 86% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 0%, 86% 100%, 0% 100%);
 }
